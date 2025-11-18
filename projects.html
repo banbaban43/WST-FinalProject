@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+<link rel="stylesheet" href="style.css">
+<title>Projects</title>
+<link rel="icon" type="image/png" href="./Images/dogwaterlogo1.png" />
+
+</head>
+<body>
+<div class="pixel-bg"></div>
+
+<nav class="p-4 bg-black text-white flex justify-between items-center shadow pixel-font">
+  <button id="hamburger" class="xl:hidden text-white text-3xl">
+    ☰
+  </button>
+  <!-- Logo -->
+  <a class="text-xl font-bold nav-button whitespace-nowrap" href="index.html">
+    IVAN SERVIÑO PESIGAN
+  </a>
+
+  <!-- Hamburger (visible below 1280px) -->
+
+
+  <!-- Desktop Nav (visible at 1280px and above) -->
+  <div class="hidden xl:flex gap-6 text-lg">
+    <a class="nav-btn" href="index.html">Home</a>
+    <a class="nav-btn" href="about.html">About</a>
+    <a class="nav-btn" href="projects.html">Projects</a>
+    <a class="nav-btn" href="artworks.html">Artworks</a>
+    <a class="nav-btn" href="contact.html">Contact</a>
+    <a class="nav-btn" href="resume.html">Resume</a>
+  </div>
+
+</nav>
+
+<!-- Mobile Sidebar -->
+<div id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-black text-white pixel-font shadow transform -translate-x-full transition-transform duration-300 z-50">
+  <div class="flex flex-col p-6 gap-6 text-lg">
+
+    <button id="closeSidebar" class="text-2xl self-end">✕</button>
+
+    <a class="nav-btn" href="index.html">Home</a>
+    <a class="nav-btn" href="about.html">About</a>
+    <a class="nav-btn" href="projects.html">Projects</a>
+    <a class="nav-btn" href="artworks.html">Artworks</a>
+    <a class="nav-btn" href="contact.html">Contact</a>
+    <a class="nav-btn" href="resume.html">Resume</a>
+  </div>
+</div>
+
+<!-- Overlay -->
+<div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+
+
+
+<section class="max-w-5xl mx-auto mt-10 p-4 grid md:grid-cols-1 gap-6 pixel-font justify-center">
+  <div class="bg-black p-4 shadow border border-white rounded ">
+    <h3 class="text-xl mb-2 flex justify-center">Project One</h3>
+    <p class="flex justify-center">ISurvivor.</p>
+    <div class="flex justify-center">
+
+<div class="relative w-full" style="padding-top: 75%;">
+  <iframe
+    src="https://scratch.mit.edu/projects/946529788/embed"
+    class="absolute top-0 left-0 w-full h-full"
+    allowtransparency="true"
+    frameborder="0"
+    scrolling="no"
+    allowfullscreen>
+  </iframe>
+</div>
+  </div>
+  <p class="flex justify-center text-center">iSurvivor is a Vampire Survivor inspired game where all you have to do is survive the hordes of slimes. Pick up Powerups to keep up to the ever-evolving slimes.</p>
+  <br></br>
+  <h3 class="text-xl mb-2 flex justify-center"> Controls </h3>
+  <p class="flex justify-center">WASD - To Move   </p>
+  <p class="flex justify-center">SPACE - To Dash</p>
+  <p class="flex justify-center">LMB - To Shoot    </p>
+  <p class="flex justify-center">Q - To Toggle Auto-Attack  </p>
+
+  </div>
+
+
+  <div class="bg-black p-4 shadow border border-white rounded">
+    <h3 class="text-xl mb-2 flex justify-center" >Project Two</h3>
+    <p class="flex justify-center">EM2</p>
+
+    <div class="relative w-full" style="padding-top: 62.5%;">
+<iframe frameborder="0" src="https://itch.io/embed/3848544" width="552" height="167"     class="absolute top-0 left-0 w-full h-full"
+    allowtransparency="true"
+    frameborder="0"
+    scrolling="no"></iframe>
+
+</div>
+  <p class="flex justify-center text-center">Ethical Monetization Model(EM2)  is an interactive guide for game developers that are trying to break through the Free-To-Play Market.</p>
+
+  </div>
+
+
+  <div class="bg-black p-4 shadow border border-white rounded">
+    <h3 class="text-xl mb-2 flex justify-center">Project Three</h3>
+    <p class="flex justify-center">PONG13</p>
+    <div class="relative w-full" style="padding-top: 62.5%;">
+ <iframe frameborder="0" src="https://itch.io/embed/3278802" width="552" height="167" class="absolute top-0 left-0 w-full h-full"
+    allowtransparency="true"
+    frameborder="0"
+    scrolling="no"><a href="https://banbaban.itch.io/pong13">Pong13 by BANBABAN</a></iframe>
+  </div>
+    <p class="flex justify-center text-center">PONG13 is a simple game of pong that you can play wit a friend. </p>
+
+    </div>
+
+
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>
